@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>But Tracker</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+        //Identificando o navegador e o relógio 
+
+        document.onreadystatechange = () => {
+            if (document.readyState === 'interactive') {
+                document.getElementById('userAgent').value = navigator.userAgent;
+                document.getElementById('userDate').value = new Date();
+                console.log('Olá', navigator.userAgent);
+                console.log('Hora', new Date());
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/">Bug Tracker</a>
+    </nav>
+    <div class="container">
+        <div class="alert alert-info" role="alert">
+            Seu problema foi reportado com sucesso. Muito obrigado!
+            <a href="/">Voltar para página principal</a>
+        </div>
+    </div>
+</body>
+
+</html>

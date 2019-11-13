@@ -1,0 +1,5 @@
+node_modules
+
+#Igone Folder named 'docs' 
+docs/
+testarPlanilha.js
